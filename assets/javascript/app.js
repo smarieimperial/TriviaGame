@@ -41,7 +41,10 @@ function addScore() {
 		$('#stop').on('click', function(){
 			clearInterval(timer);
 			seconds = 10;
-			$('#countdown').text(seconds);
+            $('#countdown').text(seconds);
+            alert("Calculating your score...");
+        // add the addScore(); function here
+            addScore();
         });
         
     
