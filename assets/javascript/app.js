@@ -45,6 +45,7 @@ function addScore() {
             alert("Calculating your score...");
         // add the addScore(); function here
             addScore();
+
         });
         
     
