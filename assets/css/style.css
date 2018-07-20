@@ -1,3 +1,40 @@
-.doneButton {
+#doneButton {
     margin-top: 20px;
+}
+
+body {
+    color: white;
+}
+#title, #time, #quiz, #done {
+    margin-left: 40px;
+}
+button {
+    width: 100px;
+    margin-left: 40px;
+    background-color: #008CBA;
+    font-size: 24px;
+    border-radius: 8px;
+}
+#done_button {
+    background-color: #008CBA;
+    border: 2px solid blackgray;
+    font-size: 24px;
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    
+}
+#done_button:hover {
+    background-color: white;
+    color: #008CBA;
+}
+#start, #stop {
+    background-color:#008CBA; 
+    color: white; 
+    border: 2px solid blackgray;
+}
+
+#start:hover, #stop:hover {
+    background-color: white;
+    color: #008CBA;
 }

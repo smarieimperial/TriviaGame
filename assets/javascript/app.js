@@ -2,6 +2,12 @@ score = 0;
 incorrect = 0;
 unanswered = 0;
 
+function hideStart() {
+    $(this).hide();
+}
+
+$('.clickMe').on('click', hideStart);
+
 function addScore() {
 
     var question1 = document.quiz.q1.value;
@@ -103,7 +109,6 @@ function addScore() {
             alert("Calculating your score... please press on OK for your score...");
         // add the addScore(); function here
             addScore();
-
         });
         
     
