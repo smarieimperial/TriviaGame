@@ -46,6 +46,7 @@ body {
     filter: blur(40px);
 }
 button {
+    font-family: 'Merriweather Sans', sans-serif;
     width: 100px;
     margin-left: 40px;
     background-color: #08B3D0;
