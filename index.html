@@ -3,11 +3,11 @@
     <head>
         <title>Trivia Game</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
-        
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700i" rel="stylesheet"> 
     </head>
 
 <body background="assets/css/mirrorimg.jpg">	
-    <h1 id="title">Totally Trivial Trivia</h1>
+    <h1 id="title" data-text="Totally_Trivial_Trivia">Totally Trivial Trivia</h1>
 
     <h2 id="time">Time Remaining: <span id="countdown"></span></h2>
 
@@ -62,7 +62,11 @@
     <div id="done">
     <input id="done_button" type="button" value="Done!" onclick="addScore()">
     </div>
-
+    <footer>
+    
+        &copy Copyright by Stephanie Imperial
+     
+   </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 
