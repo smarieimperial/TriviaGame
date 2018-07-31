@@ -80,7 +80,7 @@ function addScore() {
 }
 
 // code for the countdown timer below. Timer seconds starts at 10 for testing.
-    var seconds = 15;
+    var seconds = 20;
     var timer;
         // div id 'countdown' prints to screen the number in the variable named seconds.
 		$('#countdown').text(seconds);
@@ -91,7 +91,7 @@ function addScore() {
             if (seconds < 0) {
                 clearInterval(timer);
                 //alert("Time's up!");
-                seconds = 15;
+                seconds = 20;
 			    $('#countdown').text(seconds);
                 addScore();
             }
@@ -104,7 +104,7 @@ function addScore() {
         // added this stop button for testing.
 		$('#stop').on('click', function(){
 			clearInterval(timer);
-			seconds = 15;
+			seconds = 20;
             $('#countdown').text(seconds);
             alert("Calculating your score... please press on OK for your score...");
         // add the addScore(); function here
