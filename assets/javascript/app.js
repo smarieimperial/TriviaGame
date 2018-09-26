@@ -6,7 +6,8 @@ function hideStart() {
     $(this).hide();
 }
 
-$('.clickMe').on('click', hideStart);
+$('.clickMe').on('click', hideStart); // when User clicks on the 'Start' button
+// the timer begins countdown and the 'Start' button gets hidden
 
 function addScore() {
 
@@ -19,50 +20,50 @@ function addScore() {
     var question7 = document.quiz.q7.value;
     var question8 = document.quiz.q8.value;
 
-    if (question1 == "2009") {
+    if (question1 == "November_6") {
 	    score++;
     } else if (question1 == false) {
         unanswered++;
       } else (incorrect--)
 
-    if (question2 == "LaborDay") {
+    if (question2 == "True") {
 	    score++;
     } else if (question2 == false) {
         unanswered++;
       } else (incorrect--)
 
-    if (question3 == "Alphabet") {
+    if (question3 == "grand_old_party") {
 	    score++;
     } else if (question3 == false) {
         unanswered++;
       } else (incorrect--)
 
-    if (question4 == "jerryBrown") {
+    if (question4 == "435") {
 	    score++;
     } else if (question4 == false) {
         unanswered++;
       } else (incorrect--)
 
-    if (question5 == "sasatoshiNakamoto") {
+    if (question5 == "35") {
 	    score++;
     } else if (question5 == false) {
         unanswered++;
       } else (incorrect--)
 
-    if (question6 == "timDraper") {
+    if (question6 == "True") {
 	    score++;
     } else if (question6 == false) {
         unanswered++;
       } else (incorrect--)
 
-    if (question7 == "Amazon") {
+    if (question7 == "BallotPedia") {
 	    score++;
     } else if (question7 == false) {
         unanswered++;
       } else (incorrect--)
 
-    if (question8 == "Yoda") {
-	    score++;
+      if (question8 == "vote.gov" || question8 == "registertovote.ca.gov") {
+        score++;
     } else if (question8 == false) {
         unanswered++;
       } else (incorrect--)
@@ -72,6 +73,8 @@ function addScore() {
     document.write("<p>Incorrect Answers: " + incorrect + "</p>");
     document.write("<p>Unanswered: " + unanswered + "</p>");
 
+    // code below is for when the User selects the 'Done' button at the bottom of the page
+    // it clears the timer, resets the seconds to = 0, 
     $('#done').on('click', function(){
         clearInterval(timer);
         seconds = 0;
